@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">SecondApp</string>
+    <string name="edad">Edad</string>
+    <string name="calcular">calcular</string>
+    <string name="peso">Peso</string>
+    <string name="altura">Altura</string>
+    <string name="resultado">Resultado</string>
+    <string name="indicacion">Indicacion</string>
+    <string name="volver">Volver</string>
 </resources>

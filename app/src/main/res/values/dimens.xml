@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="card_view_height">170dp</dimen>
+    <dimen name="text_view_size">18dp</dimen>
+    <dimen name="text_view_size_main">30dp</dimen>
+    <dimen name="button_circle">60dp</dimen>
+</resources>

@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.imcapp.ImcActivity"
+    android:paddingHorizontal="20dp"
+    android:paddingTop="50dp"
+    android:paddingBottom="5dp"
+    android:background="@color/purple"
+    >
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cvMale"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/cvFemale"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/card_view_height"
+        android:layout_marginRight="30dp"
+        app:cardBackgroundColor="@color/black"
+        app:cardCornerRadius="20dp"
+        >
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center"
+            >
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:src="@drawable/vector_male"
+                >
+            </androidx.appcompat.widget.AppCompatImageView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/text_view_size"
+                android:text="Hombre">
+
+            </TextView>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cvFemale"
+        app:layout_constraintLeft_toRightOf="@id/cvMale"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/card_view_height"
+        app:cardBackgroundColor="@color/black"
+        app:cardCornerRadius="20dp"
+        >
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center"
+            >
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:src="@drawable/vector_female"
+                >
+            </androidx.appcompat.widget.AppCompatImageView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/text_view_size"
+                android:text="Mujer">
+
+            </TextView>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cvAltura"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/cvMale"
+        android:layout_marginTop="30dp"
+        app:cardBackgroundColor="@color/black"
+        app:cardCornerRadius="20dp"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/card_view_height"
+            android:orientation="vertical"
+            android:gravity="center"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/altura"
+                android:textSize="@dimen/text_view_size"
+                android:textColor="@color/gray" />
+
+            <TextView
+                android:id="@+id/tvAltura"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="@string/altura"
+                android:textSize="30sp"
+                android:textColor="@color/white" />
+
+            <com.google.android.material.slider.Slider
+                android:id="@+id/sAltura"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:stepSize="1"
+                android:valueFrom="100"
+                android:valueTo="200"
+                >
+            </com.google.android.material.slider.Slider>
+
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cvPeso"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/card_view_height"
+        android:layout_marginRight="30dp"
+        app:layout_constraintTop_toBottomOf="@id/cvAltura"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/cvEdad"
+        android:layout_marginTop="30dp"
+        app:cardBackgroundColor="@color/black"
+        app:cardCornerRadius="30dp"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/card_view_height"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/text_view_size"
+                android:text="@string/peso" />
+
+            <TextView
+                android:id="@+id/tvPeso"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_view_size_main"
+                android:text="@string/peso" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                >
+                <androidx.appcompat.widget.AppCompatImageButton
+                    android:id="@+id/bDisminuirPeso"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:src="@drawable/vector_reduce"/>
+                <androidx.appcompat.widget.AppCompatImageButton
+                    android:id="@+id/bAumentarPeso"
+                    android:layout_width="@dimen/button_circle"
+                    android:layout_height="@dimen/button_circle"
+                    android:src="@drawable/vector_add"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cvEdad"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/card_view_height"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/cvAltura"
+        android:layout_marginTop="30dp"
+        app:cardBackgroundColor="@color/black"
+        app:layout_constraintLeft_toRightOf="@id/cvPeso"
+        app:cardCornerRadius="30dp"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/card_view_height"
+            android:orientation="vertical"
+            android:gravity="center">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/text_view_size"
+                android:text="@string/edad">
+            </TextView>
+
+            <TextView
+                android:id="@+id/tvEdad"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_view_size_main"
+                android:text="@string/edad" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                >
+                <androidx.appcompat.widget.AppCompatImageButton
+                    android:id="@+id/bDisminuirEdad"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:src="@drawable/vector_reduce"/>
+                <androidx.appcompat.widget.AppCompatImageButton
+                    android:id="@+id/bAumentarEdad"
+                    android:layout_width="@dimen/button_circle"
+                    android:layout_height="@dimen/button_circle"
+                    android:src="@drawable/vector_add"/>
+            </LinearLayout>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/bCalcular"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        app:layout_constraintTop_toBottomOf="@id/cvPeso"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:textSize="20sp"
+        android:text="@string/calcular">
+
+    </androidx.appcompat.widget.AppCompatButton>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
