@@ -59,6 +59,19 @@ class ImcActivity : AppCompatActivity() {
         buttonDisminuirEdad = findViewById(R.id.bDisminuirEdad)
         buttonCalcularIMC = findViewById(R.id.bCalcular)
 
+        setInitValores();
+
+    }
+
+    private fun setInitValores() {
+        setEsHombre(this.esHombre);
+
+        val df = DecimalFormat("#.##")
+        val alturaFinal = df.format(altura)
+        this.altura = altura.toDouble()
+        this.textViewAltura.text = "$alturaFinal cm";
+        setEdad();
+        setPeso();
     }
 
     private fun iniciarEscuchadores() {
