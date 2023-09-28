@@ -6,6 +6,7 @@ import android.os.Bundle
 import android.widget.Button
 import com.example.firstapp.FirstActivity
 import com.example.imcapp.ImcActivity
+import com.example.iterativeapp.IterativeActivity
 import com.example.secondapp.R
 
 class MenuActivity : AppCompatActivity() {
@@ -15,10 +16,11 @@ class MenuActivity : AppCompatActivity() {
 
         val bPrimerApp = findViewById<Button>(R.id.bPrimerApp)
         val bSegundaApp = findViewById<Button>(R.id.bSegundaApp)
+        val bTerceraApp = findViewById<Button>(R.id.bTerceraApp)
 
         bPrimerApp.setOnClickListener{goToView(FirstActivity::class.java)}
-
         bSegundaApp.setOnClickListener{goToView(ImcActivity::class.java)}
+        bTerceraApp.setOnClickListener{goToView(IterativeActivity::class.java)}
     }
 
     fun goToView(view: Class<*>){

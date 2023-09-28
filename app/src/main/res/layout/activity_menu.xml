@@ -25,4 +25,12 @@
         android:text="Segunda App"
         android:textSize="20dp"></Button>
 
+    <Button
+        android:id="@+id/bTerceraApp"
+        android:layout_margin="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tercera App"
+        android:textSize="20dp"></Button>
+
 </LinearLayout>
