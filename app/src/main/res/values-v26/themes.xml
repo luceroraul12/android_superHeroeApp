@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="IterativeSubtitle">
+        <item name="textAllCaps">true</item>
+        <item name="android:textColor">@color/fourthColor</item>
+        <item name="android:textSize">18dp</item>
+        <item name="android:layout_marginHorizontal">20dp</item>
+    </style>
+</resources>

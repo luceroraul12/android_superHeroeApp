@@ -1,9 +1,55 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.iterativeapp.IterativeActivity">
+    tools:context="com.example.iterativeapp.IterativeActivity"
+    android:background="@color/thirthColor"
+    android:orientation="vertical"
+    >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/iterative_app_homitowen"
+        android:textSize="@dimen/text_view_size_main"
+        android:textStyle="bold"
+        android:textColor="@color/material_dynamic_primary0"
+        android:layout_marginVertical="20dp"
+        android:layout_marginHorizontal="10dp"
+        android:textAllCaps="true"
+        tools:ignore="SpUsage" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/categorias"
+        android:layout_gravity="left"
+        style="@style/IterativeSubtitle"
+        />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvCategories"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="10dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tareas"
+        android:layout_gravity="left"
+        style="@style/IterativeSubtitle"
+        />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvTasks"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginVertical="10dp"
+        android:layout_marginHorizontal="10dp"
+        />
+
+
+</LinearLayout>

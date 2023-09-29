@@ -6,4 +6,11 @@
     <color name="purple">#120E30</color>
     <color name="purple_light">#4936D3</color>
 
+
+
+    <item name="firstColor" type="color">#219C90</item>
+    <item name="secondColor" type="color">#E9B824</item>
+    <item name="thirthColor" type="color">#EE9322</item>
+    <item name="fourthColor" type="color">#D83F31</item>
+
 </resources>
