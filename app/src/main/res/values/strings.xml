@@ -10,4 +10,10 @@
     <string name="iterative_app_homitowen">Iterative App</string>
     <string name="categorias">Categorias</string>
     <string name="tareas">Tareas</string>
+    <string name="new_task">New task</string>
+    <string name="escribir">Escribir...</string>
+    <string name="personal">Personal</string>
+    <string name="business">Business</string>
+    <string name="other">Other</string>
+    <string name="add">Add</string>
 </resources>

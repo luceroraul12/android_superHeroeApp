@@ -3,19 +3,27 @@
     android:layout_width="match_parent"
     android:layout_height="50dp"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    app:cardBackgroundColor="@color/firstColor"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:cardBackgroundColor="@color/purple_light"
     app:cardCornerRadius="30dp"
     android:layout_marginVertical="5dp"
+    android:id="@+id/rowTaskItem"
     >
+    <CheckBox
+        android:id="@+id/cbTaskItem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        />
     <TextView
         android:id="@+id/tvTaskItem"
         android:layout_gravity="center"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="30dp"
+        android:textSize="35dp"
         android:textStyle="bold"
         android:textColor="@color/white"
-        android:text="TEST"
+        tools:text="TEST"
         ></TextView>
 
 </androidx.cardview.widget.CardView>

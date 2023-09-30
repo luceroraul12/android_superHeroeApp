@@ -1,4 +1,4 @@
-package com.example
+package com.exampleApp
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
@@ -8,6 +8,7 @@ import com.example.firstapp.FirstActivity
 import com.example.imcapp.ImcActivity
 import com.example.iterativeapp.IterativeActivity
 import com.example.secondapp.R
+import com.example.superheroapp.SuperHeroListActivity
 
 class MenuActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -17,10 +18,12 @@ class MenuActivity : AppCompatActivity() {
         val bPrimerApp = findViewById<Button>(R.id.bPrimerApp)
         val bSegundaApp = findViewById<Button>(R.id.bSegundaApp)
         val bTerceraApp = findViewById<Button>(R.id.bTerceraApp)
+        val bSuperHeroApp = findViewById<Button>(R.id.bSuperHeroApp)
 
         bPrimerApp.setOnClickListener{goToView(FirstActivity::class.java)}
         bSegundaApp.setOnClickListener{goToView(ImcActivity::class.java)}
         bTerceraApp.setOnClickListener{goToView(IterativeActivity::class.java)}
+        bSuperHeroApp.setOnClickListener { goToView(SuperHeroListActivity::class.java) }
     }
 
     fun goToView(view: Class<*>){

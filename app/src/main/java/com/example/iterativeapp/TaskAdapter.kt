@@ -5,7 +5,7 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.example.secondapp.R
 
-class TaskAdapter(private var task: List<String>): RecyclerView.Adapter<TaskViewHolder>() {
+class TaskAdapter(public var task: List<TaskItem>, private val onTaskSelected: (Int) -> Unit): RecyclerView.Adapter<TaskViewHolder>() {
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): TaskViewHolder {
         val view = LayoutInflater.from(parent.context).inflate(R.layout.item_task, parent, false)
         return TaskViewHolder(view)
@@ -15,5 +15,6 @@ class TaskAdapter(private var task: List<String>): RecyclerView.Adapter<TaskView
 
     override fun onBindViewHolder(holder: TaskViewHolder, position: Int) {
         holder.render(task.get(position))
+        holder.itemView.setOnClickListener{onTaskSelected(position)}
     }
 }

@@ -1,55 +1,68 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<FrameLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.iterativeapp.IterativeActivity"
-    android:background="@color/thirthColor"
-    android:orientation="vertical"
-    >
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/iterative_app_homitowen"
-        android:textSize="@dimen/text_view_size_main"
-        android:textStyle="bold"
-        android:textColor="@color/material_dynamic_primary0"
-        android:layout_marginVertical="20dp"
-        android:layout_marginHorizontal="10dp"
-        android:textAllCaps="true"
-        tools:ignore="SpUsage" />
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/categorias"
-        android:layout_gravity="left"
-        style="@style/IterativeSubtitle"
-        />
-
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/rvCategories"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginVertical="10dp"
-        />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/tareas"
-        android:layout_gravity="left"
-        style="@style/IterativeSubtitle"
-        />
-
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/rvTasks"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginVertical="10dp"
-        android:layout_marginHorizontal="10dp"
+        tools:context="com.example.iterativeapp.IterativeActivity"
+        android:background="@color/thirthColor"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/iterative_app_homitowen"
+            android:textSize="@dimen/text_view_size_main"
+            android:textStyle="bold"
+            android:textColor="@color/material_dynamic_primary0"
+            android:layout_marginVertical="20dp"
+            android:layout_marginHorizontal="10dp"
+            android:textAllCaps="true"
+            tools:ignore="SpUsage" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/categorias"
+            android:layout_gravity="left"
+            style="@style/IterativeSubtitle"
+            />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvCategories"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="10dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tareas"
+            android:layout_gravity="left"
+            style="@style/IterativeSubtitle"
+            />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvTasks"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="10dp"
+            android:layout_marginHorizontal="10dp"
+            />
+    </LinearLayout>
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabAddTask"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:tint="@color/black"
+        android:src="@drawable/vector_add"
+        app:maxImageSize="50dp"
+        android:layout_gravity="right|bottom"
+        android:layout_margin="50dp"
         />
-
-
-</LinearLayout>
+</FrameLayout>

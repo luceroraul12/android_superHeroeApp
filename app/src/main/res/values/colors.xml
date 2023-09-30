@@ -5,12 +5,13 @@
     <color name="gray">#A8A6A6</color>
     <color name="purple">#120E30</color>
     <color name="purple_light">#4936D3</color>
-
+    <color name="category_selected">#FFD400</color>
+    <color name="category_unselected">#3F51B5</color>
 
 
     <item name="firstColor" type="color">#219C90</item>
     <item name="secondColor" type="color">#E9B824</item>
-    <item name="thirthColor" type="color">#EE9322</item>
-    <item name="fourthColor" type="color">#D83F31</item>
+    <item name="thirthColor" type="color">#0B308E</item>
+    <item name="fourthColor" type="color">#00B7FF</item>
 
 </resources>
