@@ -14,5 +14,5 @@ data class SuperHeroResult(
 )
 
 data class ImageHeroe(
-    @SerializedName("url") val url: String
+    @SerializedName("url") val url: String = "VACIO"
 )
