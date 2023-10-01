@@ -14,4 +14,7 @@
     <item name="thirthColor" type="color">#0B308E</item>
     <item name="fourthColor" type="color">#00B7FF</item>
 
+
+    <color name="superhero_item_name" type="color">#46B71C1C</color>
+
 </resources>

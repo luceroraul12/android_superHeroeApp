@@ -18,6 +18,7 @@
         app:iconifiedByDefault="false"/>
 
     <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvHeroes"
         android:layout_width="0dp"
         android:layout_height="0dp"
         app:layout_constraintLeft_toLeftOf="parent"
@@ -25,6 +26,17 @@
         app:layout_constraintTop_toBottomOf="@id/svMain"
         app:layout_constraintBottom_toBottomOf="parent"
         android:layout_marginTop="10dp"
+        />
+
+    <ProgressBar
+        android:id="@+id/pbSearch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:visibility="gone"
         />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
