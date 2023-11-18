@@ -54,4 +54,8 @@ dependencies {
 
     // para poder imagenes desde URL
     implementation("com.squareup.picasso:picasso:2.8")
+
+
+    // para persisitr datos de manera simple
+    implementation("androidx.datastore:datastore-preferences:1.0.0")
 }
